@@ -1,0 +1,60 @@
+@import "../../variables.module.scss"; // Import global variables
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  background-color: #f0f2f5;
+  border-radius: 16px;
+  margin: 0 auto; // Centers the card horizontally
+
+  // Default width for larger screens
+  width: 100%;
+
+  // Responsive widths
+  @media (max-width: 960px) { // Tablets
+    width: 90%;
+  }
+
+  @media (max-width: 600px) { // Mobile
+    width: 70%;
+  }
+}
+
+.labelText {
+  font-size: 16px !important;
+  font-weight: 300 !important;
+
+  // Responsive font-size for smaller screens
+  @media (max-width: 600px) {
+    font-size: 14px !important;
+  }
+}
+
+.valueText {
+  font-size: 18px !important;
+  color: $primary-color;
+
+  // Responsive font-size for smaller screens
+  @media (max-width: 600px) {
+    font-size: 16px !important;
+  }
+}
+
+.linkText {
+  color: #000;
+  font-size: 18px !important;
+  font-weight: 300 !important;
+  text-decoration: underline;
+  transition: color 0.3s ease; // Smooth color transition on hover
+
+  &:hover {
+    color: darken($primary-color, 10%); // Darken color on hover for better interactivity
+  }
+
+  // Responsive font-size for smaller screens
+  @media (max-width: 600px) {
+    font-size: 16px !important;
+  }
+}

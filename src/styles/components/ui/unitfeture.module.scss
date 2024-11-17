@@ -1,0 +1,61 @@
+.title {
+    font-size: 16px !important;
+    color: black;
+    font-weight: 600 !important;
+  }
+  
+  .infoCard {
+    width: 100%; /* Full width */
+    max-width: 505px; /* Maximum width for larger screens */
+    height: auto; /* Adjust height to content on smaller screens */
+    background-color: #fff;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.08); /* Drop shadow */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    align-items: center;
+  }
+  
+  .iconTitle {
+    font-size: 12px !important;
+    color: #494949;
+    text-align: start;
+  }
+  
+  .iconImage {
+    margin-right: 8px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .infoCard {
+      max-width: 90%; /* Smaller width on tablet */
+      padding: 16px; /* Adjusted padding */
+    }
+  
+    .title {
+      font-size: 14px !important; /* Slightly smaller font for tablet */
+    }
+  
+    .iconTitle {
+      font-size: 11px !important; /* Adjusted font size for tablet */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .infoCard {
+      max-width: 100%; /* Full width on mobile */
+      padding: 12px; /* Reduced padding for mobile */
+    }
+  
+    .title {
+      font-size: 12px !important; /* Smaller font for mobile */
+    }
+  
+    .iconTitle {
+      font-size: 10px !important; /* Smaller font for mobile */
+    }
+  }
+  

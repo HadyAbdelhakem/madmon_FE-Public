@@ -1,0 +1,34 @@
+.mainContainer{
+    width: 242px;
+    height: 123px;
+    background-color: #fff;
+    border-radius: 10px; // Rounded corners
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.08); // Drop shadow
+    margin-bottom: 20px;
+}
+.headerContainer{
+    width: 130px;
+    height: 19px;
+    text-align: center;
+    
+}
+.headerText{
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: black;
+    text-align: center;
+}
+.priceText{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #0512F5;
+    text-align: center;
+
+}
+.currencyText{
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    color: #0512F5;
+    text-align: center;
+    margin-left: 1px;
+}

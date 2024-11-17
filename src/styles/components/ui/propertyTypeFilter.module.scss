@@ -1,0 +1,17 @@
+.carouselContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carouselContainer:hover .carouselArrow {
+    opacity: 1; /* Show arrows on hover */
+    visibility: visible;
+  }
+  
+  .carouselArrow {
+    opacity: 0; /* Hide arrows by default */
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  

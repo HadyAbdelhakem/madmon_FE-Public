@@ -1,0 +1,181 @@
+{
+  "HomePage": {
+    "title": "ar",
+    "about": "Go to arabic"
+  },
+  "Users": {
+    "title": "ar",
+    "description": "description"
+  },
+  "DesktopHeader": {
+    "home": "الرئيسية",
+    "login": "تسجيل دخول",
+    "favorites": "المفضلة",
+    "contact": "اتصل بنا",
+    "about": "حول مضمون"   ,
+    "search": "بحث"
+  },
+  "HeroSection": {
+    "title": "اضمن بيتك",
+    "subtitle": "اشترِ بيتك بثقة تامة. في مضمون، نضمن لك التحقق الشامل من الوحدات لضمان سلامة وأمان معاملتك العقارية",
+    "submit": "إرسال" 
+  },
+  "SearchBar": {
+    "submit": "إرسال",
+    "searchInputPlaceholder": "اكتب الموقع هنا",
+    "sellButton": "بيع",
+    "buyButton": "شراء"
+  },
+  "siteTitle": "مدمون",
+  "siteDescription": "تم الإنشاء بواسطة تطبيق Next",
+  "DescribeSection": {
+    "title": "خصص منزلك",
+    "description": "لا تستطيع إيجاد منزل أحلامك؟ سيوفره لك مضمون. أخبرنا عن منزل أحلامك وسنوفره لك في أسرع وقت.​​​​​​​​​​​​​​​​",
+    "buttonText": "صف منزلك"
+  },
+"Login": {
+    "mobileNumber": "رقم الهاتف",
+    "enterYourMobileNumber": "أدخل رقم هاتفك المحمول ",
+    "password": "كلمة المرور",
+    "rememberMe": "تذكرني",
+    "forgotPassword": "هل نسيت كلمة المرور؟",
+    "login": "تسجيل الدخول",
+    "phoneErrorEmpty": "يرجى إدخال رقم الهاتف",
+    "phoneErrorInvalid": "رقم الهاتف غير صالح",
+    "passwordErrorEmpty": "يرجى إدخال كلمة المرور",
+    "apiError": "رقم الهاتف أو كلمة المرور غير صحيحة. حاول مرة أخرى."
+  },
+  "SearchSection": {
+    "title": "أكمل آخر بحث لك وابحث عن منزلك المثالي",
+    "showAllButton": "عرض الكل"
+  },
+  "CountDawnSection": {
+    "title": "لديك حجز سينتهي خلال",
+    "description": "أكمل حجزك قبل انتهاء الوقت لضمان وحدتك",
+    "buttonText": "الذهاب إلى حجزي"
+  },
+  "CountdownTimer": {
+    "days": "أيام",
+    "hours": "ساعات",
+    "minutes": "دقائق",
+    "seconds": "ثواني"
+  },
+  "ComfortSection": {
+    "header": "الراحة والسهولة بدون تعقيد",
+    "description": "مع مضمون، نضمن لك عميلاً جاداً ومناسباً دون إضاعة وقتك مع الأطراف غير المهتمة. عملية البيع في مضمون سهلة وخالية من المتاعب.",
+    "sellButton": "بع منزلك"
+  },
+  "ContactUs": {
+    "address": "٤٢ فريق أول علي عامر",
+    "phone": "+١٢٣ ٤٥٦ ٧٨٩",
+    "email": "contact@domain.com",
+    "header": "اتصل بنا",
+    "description": "لوريم إيبسوم دولور سيت أميت، ليبرو، إيجيت أورنا. موربي نون إيست. موربي فاوستيبوس ديجنيزيم، إكس فاسيليسيس. فيستيبيولوم إكس نون بلاسيرات. هندريريت فاوستيبوس إكس ألترايسس نون."
+  },
+  "Footer": {
+    "contactUs": "اتصل بنا",
+    "address": "٤٢ فريق أول علي عامر",
+    "phone": "٠١٢٣٤٥٦٨٩١٠",
+    "email": "hr@Madmon.ai",
+    "usefulLinks": "روابط مفيدة",
+    "aboutUs": "معلومات عنا",
+    "privacyPolicy": "سياسة الخصوصية",
+    "support": "الدعم",
+    "termsAndConditions": "الشروط والأحكام"
+  },
+  "DownloadTheApp": {
+    "featureAvailable": "هذه الميزة متاحة فقط على تطبيقنا",
+    "downloadHere": "قم بالتنزيل من هنا",
+    "getItOn": "احصل عليه",
+    "scanQrCode": "امسح رمز الاستجابة السريعة لتنزيل التطبيق لـ",
+    "android": "أندرويد",
+    "ios": "iOS"
+  },
+  "TabSwitcher": {
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب"
+  },
+  "BackButton": {
+    "back": "رجوع" 
+  },
+  "SocialLogin": {
+  "or": "أو",
+  "googleSignIn": "تسجيل الدخول باستخدام جوجل",
+  "continueWithGoogle": "المتابعة مع جوجل",
+  "appleSignIn": "تسجيل الدخول باستخدام آبل",
+  "continueWithApple": "المتابعة مع آبل"
+},
+"SignUpForm": {
+  "name": "الاسم",
+  "enterYourName": "أدخل اسمك...",
+  "mobileNumber": "رقم الهاتف",
+  "password": "كلمة المرور",
+  "enterPassword": "أدخل كلمة المرور",
+  "reEnterPassword": "أعد إدخال كلمة المرور",
+  "confirmPassword": "تأكيد كلمة المرور",
+  "signUp": "إنشاء حساب",
+  "iAgree": "أوافق على",
+    "terms": "الشروط",
+    "and": "و",
+    "privacyPolicies": "سياسات الخصوصية"
+},
+"PhoneNumberInput": {
+  "placeholder": "...أدخل رقم هاتفك المحمول"
+},
+"ForgotPassword": {
+    "title": "هل نسيت كلمة المرور؟",
+    "description": "لا تقلق، يحدث لنا جميعًا. أدخل رقم هاتفك المحمول أدناه لاستعادة كلمة المرور الخاصة بك",
+    "mobileNumber": "رقم الهاتف المحمول",
+    "sendButton": "إرسال",
+    "invalidPhoneNumber": "رقم الهاتف غير صالح",
+    "otpError": "فشل في إرسال رمز التحقق. حاول مرة أخرى."
+  },
+  "VerifyCode": {
+    "title": "تحقق من الرمز",
+    "description": "تم إرسال رمز التحقق إلى هاتفك المحمول",
+    "fillAllFields": "يرجى ملء جميع الحقول.",
+    "verificationFailed": "فشل التحقق. حاول مرة أخرى.",
+    "codeDigit": "الرقم {index} من رمز التحقق",
+    "verifyButton": "تحقق"
+  },
+  "ResendTimer": {
+    "didNotReceiveCode": "لم تستلم الرمز؟",
+    "resend": "إعادة الإرسال"
+  },
+  "common":{
+    "myAccount": "حسابي",
+    "myUnits": "وحداتي",
+    "myReservations": "حجوزاتي",
+    "activateYourAccount": "فعّل حسابك"
+
+  },
+  "ProfileCard":{
+    "email": "البريد الإلكتروني",
+    "addYourEmail": "أضف بريدك الإلكتروني",
+    "address": "العنوان",
+    "addYourAddress": "أضف عنوانك",
+    "phoneNumber": "رقم الهاتف",
+    "password": "كلمة المرور",
+    "errorLoadingProfile": "خطأ في تحميل الملف الشخصي: ",
+    "noProfileData": "لا توجد بيانات للملف الشخصي",
+    "edit": "تعديل"
+
+  },
+  "EditProfileCard":{
+    "email": "البريد الإلكتروني",
+    "enterEmail": "أدخل بريدك الإلكتروني",
+    "address": "العنوان",
+    "enterAddress": "أدخل عنوانك",
+    "mobileNumber": "رقم الجوال",
+    "changePassword": "تغيير كلمة المرور",
+    "cancel": "إلغاء",
+    "save": "حفظ"
+  }
+  
+  
+  
+  
+
+
+  
+}

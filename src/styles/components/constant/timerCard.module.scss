@@ -1,0 +1,48 @@
+.timerContainer {
+  width: 622px;
+  height: 239px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 600px) { /* Mobile breakpoint */
+    width: 327px; /* Reduce the container width on mobile */
+    height: 100px; /* Adjust height for smaller screens */
+    background-color: #0512F5; /* Change background color for mobile */
+  }
+}
+
+.numberText {
+  font-size: 60px !important; /* Default font size */
+  color: #ffffff;
+  font-weight: 600 !important;
+
+  @media (max-width: 600px) { /* Mobile breakpoint */
+    font-size: 30px !important; /* Reduce font size on mobile */
+  }
+}
+
+.numberTitle {
+  font-size: 16px; /* Default font size */
+  color: #ffffff;
+
+  @media (max-width: 600px) { /* Mobile breakpoint */
+    font-size: 8px !important; /* Reduce font size on mobile */
+  }
+}
+
+.colonStyle {
+  width: 5%;
+  text-align: center;
+  font-size: 60px; /* Default font size */
+  font-weight: 600;
+  color: white;
+  margin-bottom: 30px;
+
+  @media (max-width: 600px) { /* Mobile breakpoint */
+    font-size: 20px; /* Adjust font size on mobile */
+    margin-bottom: 15px; /* Adjust margin for smaller screens */
+  }
+}

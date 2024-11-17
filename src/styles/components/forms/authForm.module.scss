@@ -1,0 +1,39 @@
+.formContainer {
+    max-width: 445px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    /* Ensure responsive behavior */
+    @media (max-width: 600px) {
+      max-width: 100%; /* Allow full width on smaller screens */
+      padding: 0 16px; /* Add padding to the sides on smaller screens */
+    }
+  }
+  
+  .inputLabel {
+    font-weight: 500 !important;
+    margin-bottom: 16px !important; /* Equivalent to '2' spacing in Material-UI */
+    margin-top: 16px; /* Equivalent to '2' spacing in Material-UI */
+    font-size: 18px !important; /* Default font size for small screens */
+  
+    /* For medium and larger screens */
+    @media (min-width: 600px) {
+      font-size: 18px; /* Adjusted font size for medium and larger screens */
+    }
+  }
+  
+  .buttonContainer {
+    width: 100%; /* Ensure the parent box takes full width */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .forgotLinkContainer{
+    display: flex;
+    justify-content: end;
+  }

@@ -1,0 +1,80 @@
+.describeContainer {
+  display: flex;
+  flex-direction: row; /* Default: left-to-right */
+  justify-content: center; /* Centers content along the main axis */
+  align-items: center; /* Centers content along the cross axis */
+  background-color: #F2F3F4;
+
+  /* Adjust for RTL languages */
+  :root[dir="rtl"] & {
+    flex-direction: row-reverse; /* Flip the row direction for RTL */
+  }
+}
+
+.header {
+  font-size: 45px !important;
+  font-weight: 600 !important;
+  max-width: 517px;
+  margin-bottom: 10px !important;
+  text-align: left; /* Default text alignment */
+
+  /* Adjust for RTL languages */
+  :root[dir="rtl"] & {
+    text-align: right; /* Align text to the right for RTL */
+  }
+}
+
+.description {
+  font-size: 20px !important;
+  font-weight: 500;
+  color: #666;
+  margin-top: 15px;
+  max-width: 497px;
+  max-height: 145px;
+  text-align: left; /* Default text alignment */
+
+  /* Adjust for RTL languages */
+  :root[dir="rtl"] & {
+    text-align: right; /* Align text to the right for RTL */
+  }
+}
+
+.buttonContainer {
+  margin-top: 40px;
+  text-align: left; /* Default button alignment */
+
+  /* Adjust for RTL languages */
+  :root[dir="rtl"] & {
+    text-align: right; /* Align buttons to the right for RTL */
+  }
+}
+
+.mobileHeader {
+  font-size: 18px !important;
+  font-weight: 700 !important;
+  color: #494949 !important;
+  width: 328px;
+  text-align: left; /* Default text alignment */
+
+  /* Adjust for RTL languages */
+  :root[dir="rtl"] & {
+    text-align: right; /* Align text to the right for RTL */
+  }
+}
+
+.mobileDescription {
+  font-size: 14px !important;
+  max-width: 328px;
+  text-align: left; /* Default text alignment */
+
+  /* Adjust for RTL languages */
+  :root[dir="rtl"] & {
+    text-align: right; /* Align text to the right for RTL */
+  }
+}
+
+.mobileImage {
+  height: 127px;
+  max-width: 328px;
+  border-radius: 16px;
+}

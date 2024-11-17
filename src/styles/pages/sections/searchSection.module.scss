@@ -1,0 +1,73 @@
+.counterCard {
+  width: 1429px;
+  height: 379px;
+  background-color: #f2f3f4;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  border-radius: 15px;
+  align-content: center;
+  padding-left: 40px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row; /* Default: left to right */
+
+
+}
+
+.title {
+  font-size: 24px !important;
+  max-width: 381px;
+  color: #0512f5;
+  margin-left: 15px !important;
+
+  /* Adjust for RTL (right-to-left) languages */
+  :root[dir="rtl"] & {
+    margin-left: 0 !important; /* Remove left margin */
+    margin-right: 15px !important; /* Add right margin for RTL */
+  }
+}
+
+.centerVertical {
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content (if needed) */
+}
+
+.buttonContainer {
+  margin-top: 30px; /* Default margin for LTR */
+  display: flex;
+
+
+}
+
+.rightCol {
+  display: flex;
+  align-items: center;
+}
+
+.containerVerticalCenter {
+  display: flex;
+  align-items: center; /* This will vertically center all the direct children */
+  width: 100%;
+}
+
+.mobileSearchCard {
+  width: 100%; /* Fixed width syntax */
+  height: 70%; /* Fixed height syntax */
+  background-color: #f2f3f4;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding: 40px 20px; /* Simplified padding syntax */
+  align-content: center;
+}
+
+.mobileTitle {
+  font-size: 16px;
+  max-width: 381px;
+  color: #0512f5;
+}
+
+.MobileButtonContainer {
+  display: flex;
+  justify-content: center;
+}

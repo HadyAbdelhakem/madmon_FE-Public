@@ -1,0 +1,188 @@
+/* Base styles for all screens */
+.title {
+  color: #494949;
+  text-align: center !important;
+  font-size: 20px !important;
+  font-weight: 500 !important;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  max-width: 329px;
+}
+
+.container {
+  width: 90%; /* Use a percentage width for responsiveness */
+  max-width: 610px; /* Set a max width for larger screens */
+  height: auto; /* Adjust height to be auto for content-based sizing */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f2f3f4;
+  padding: 16px;
+  border-radius: 16px;
+  box-sizing: border-box; /* Include padding in the element's total size */
+}
+
+.iconButton {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  color: gray;
+}
+
+.onHoverContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.onHoverContainer:hover .subTitle {
+  color: #0512f5;
+}
+
+.onHoverContainer:hover .arrow {
+  transform: translateY(10px);
+  filter: brightness(0) saturate(100%) invert(27%) sepia(100%) saturate(7487%) hue-rotate(245deg) brightness(100%) contrast(130%);
+}
+
+.subTitle {
+  color: #a2a7af;
+  font-size: 18px;
+  cursor: default;
+  display: inline;
+  text-align: center;
+  margin-right: 8px;
+  align-items: center;
+}
+
+.arrow {
+  background-image: url("../../../assets/images/gray-arrow-icon.svg");
+  display: inline-block;
+  width: 10px;
+  height: 15px;
+  margin-left: 8px;
+  background-size: cover;
+  vertical-align: middle;
+  transition: transform 0.5s ease;
+  position: relative;
+  cursor: default;
+
+}
+
+.titleContainer {
+  max-width: 329px;
+}
+
+.subTitleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.qrBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #000;
+  border-radius: 16px;
+  padding: 10px;
+  background-color: #fff;
+  width: 173px;
+  height: 173px;
+  box-sizing: border-box;
+}
+
+.qrText {
+  margin-top: 10px;
+  color: #494949;
+  font-size: 14px;
+  font-weight: 500;
+  max-width: 171px;
+}
+
+/* RTL Styles */
+:root[dir="rtl"] {
+  .container {
+    direction: rtl;
+  }
+
+  .subTitle {
+    text-align: right;
+    margin-left: 8px; /* Flip margin for RTL */
+    margin-right: 0;
+  }
+
+  .arrow {
+    margin-right: 8px; /* Flip margin for RTL */
+    margin-left: 0;
+  }
+
+  .iconButton {
+    left: 8px; /* Move icon to the left for RTL */
+    right: auto;
+  }
+}
+
+/* Media queries for responsiveness */
+
+/* For small screens (up to 576px) */
+@media (max-width: 576px) {
+  .title {
+    font-size: 16px !important;
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  .container {
+    width: 95%;
+    padding: 12px;
+  }
+
+  .subTitle {
+    font-size: 14px;
+  }
+
+  .qrBox {
+    width: 150px;
+    height: 150px;
+  }
+
+  .qrText {
+    font-size: 12px;
+  }
+}
+
+/* For medium screens (up to 768px) */
+@media (max-width: 768px) {
+  .title {
+    font-size: 18px !important;
+  }
+
+  .container {
+    width: 85%;
+  }
+
+  .qrBox {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+/* For large screens (up to 992px) */
+@media (max-width: 992px) {
+  .title {
+    font-size: 20px !important;
+  }
+
+  .container {
+    width: 80%;
+  }
+}

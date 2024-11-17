@@ -1,0 +1,48 @@
+.header {
+    font-size: 22px !important;
+    font-weight: 600 !important;
+    color: #494949;
+
+    // Responsive font-size
+    @media (max-width: 600px) {
+        font-size: 18px !important;
+        text-align: center !important;
+    }
+}
+
+.button {
+    width: 295px;
+    height: 52px;
+    background-color: #6666FF !important;
+    color: #fff !important;
+    font-size: 16px !important;
+
+    // Responsive button size for smaller screens
+    @media (max-width: 600px) {
+        width: 100% !important; // Make the button full-width on smaller screens
+        height: 48px !important;
+    }
+}
+.profileCardContainer {
+
+    width: 100%;
+  
+    // Default padding for larger screens
+    margin: 0 16px;
+  
+    @media (max-width: 960px) { // Tablet screens
+      margin: 0 24px; // Adds margin on the left and right for tablets
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    @media (max-width: 600px) { // Mobile screens
+      margin: 0 40px; // Adds margin on the left and right for mobile
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  

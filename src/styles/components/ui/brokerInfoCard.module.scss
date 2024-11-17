@@ -1,0 +1,86 @@
+.mainContainer {
+  width: 100%; /* Full width */
+  max-width: 505px; /* Maximum width for larger screens */
+  margin-bottom: 20px;
+}
+
+.cardContainer {
+  width: 100%;
+  max-width: 505px; /* Maximum width for larger screens */
+  background-color: #fff;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.08); /* Shadow applied only here */
+}
+
+.header {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: black;
+  margin-bottom: 20px !important;
+}
+
+.brokerName {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  color: black;
+}
+
+.brokerStatus {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  color: #494949;
+  margin-left: 4px;
+}
+
+.noteDetails {
+  font-size: 12px !important;
+  font-weight: 300 !important;
+  color: #494949;
+}
+
+.noteText {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: #0512f5;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .mainContainer {
+    max-width: 100%; /* Full width on tablet and smaller screens */
+  }
+
+  .header {
+    font-size: 14px !important; /* Slightly smaller font for tablet */
+  }
+
+  .brokerName,
+  .brokerStatus {
+    font-size: 14px !important; /* Adjusted font size for tablet */
+  }
+
+  .noteDetails,
+  .noteText {
+    font-size: 11px !important; /* Slightly smaller font for tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContainer {
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .header {
+    font-size: 12px !important; /* Smaller font for mobile */
+  }
+
+  .brokerName,
+  .brokerStatus {
+    font-size: 12px !important; /* Smaller font for mobile */
+  }
+
+  .noteDetails,
+  .noteText {
+    font-size: 10px !important; /* Smaller font for mobile */
+  }
+}

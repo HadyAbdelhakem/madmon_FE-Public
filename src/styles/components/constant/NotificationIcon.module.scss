@@ -1,0 +1,28 @@
+// NotificationIcon.module.scss
+@import "../../variables.module.scss"; 
+
+.iconWrapper {
+    position: fixed;
+    bottom: 20px;  
+    z-index: 1000;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;   
+    height: 40px;
+    background-color: $primary-color;  
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .redCircle {
+    position: absolute; 
+    top: 10px;   
+    left: 11px;  
+    width: 7px;
+    height: 7px;
+    background-color: $alert-color;
+    border-radius: 50%;  
+    z-index: 1000 !important;
+ 
+  }

@@ -1,0 +1,73 @@
+.mainContainer {
+  width: 100%; /* Full width on smaller screens */
+  max-width: 505px; /* Maximum width for larger screens */
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.header {
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  color: black;
+  margin-bottom: 20px !important;
+}
+
+.cardContainer {
+  width: 100%; /* Full width on smaller screens */
+  max-width: 505px; /* Maximum width for larger screens */
+  height: auto; /* Adjust height based on content for smaller screens */
+  min-height: 157px; /* Minimum height for larger screens */
+  background-color: #fff;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.08); /* Drop shadow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Padding for content */
+}
+
+.notesText {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: #494949;
+  margin: 0px 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .mainContainer {
+    max-width: 90%; /* Smaller width on tablet */
+  }
+
+  .header {
+    font-size: 14px !important; /* Slightly smaller font for tablet */
+  }
+
+  .cardContainer {
+    padding: 16px; /* Reduced padding on tablet */
+  }
+
+  .notesText {
+    font-size: 11px !important; /* Adjusted font size for tablet */
+    margin: 0px 16px; /* Adjusted margin for tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContainer {
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .header {
+    font-size: 12px !important; /* Smaller font for mobile */
+  }
+
+  .cardContainer {
+    padding: 12px; /* Reduced padding for mobile */
+  }
+
+  .notesText {
+    font-size: 10px !important; /* Smaller font for mobile */
+    margin: 0px 12px; /* Adjusted margin for mobile */
+  }
+}

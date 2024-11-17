@@ -1,0 +1,17 @@
+.headerContainer {
+    width: 327px;
+    height: 44px;
+    background-color: #F2F3F4;
+    border-radius: 5px;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center items vertically */
+    margin :20px 0 20px 0
+  }
+  
+  .headerText {
+    color: black;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin-left: 10px !important;
+  }
+  

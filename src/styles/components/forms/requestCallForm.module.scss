@@ -1,0 +1,40 @@
+.formContainer {
+    width: 100%; /* Full width on small screens */
+    max-width: 713px; /* Limit the maximum width */
+    height: auto; /* Allow height to adjust based on content */
+    background-color: #F2F3F4;
+    border-radius: 10px;
+    padding: 20px; /* Reduce padding for smaller screens */
+    
+    /* Apply more padding for larger screens */
+    @media (min-width: 600px) {
+        padding: 40px;
+    }
+}
+
+.formHeader {
+    font-size: 16px;
+    color: #0512F5;
+    font-weight: 600;
+    text-align: center; /* Center-align text on smaller screens */
+    
+    @media (max-width: 600px) {
+        font-size: 14px; /* Adjust font size on smaller screens */
+    }
+}
+
+.inputContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.buttonContainer {
+    width: 100%;
+    max-width: 713px; /* Maintain max width on larger screens */
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}

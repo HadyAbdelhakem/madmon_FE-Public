@@ -1,0 +1,7 @@
+/* Assuming this is added to your main stylesheet or a module-specific stylesheet */
+.carouselItem {
+    padding: 20px !important;  /* Assuming you want padding of 20px on all sides */
+    width: 210px !important;   /* Set each item's width to 210px */
+    box-sizing: border-box; /* Ensures padding doesn't add to the width */
+  }
+  

@@ -1,0 +1,25 @@
+.title{
+    color: rgba(32, 32, 32, 0.75);
+    text-align: center !important;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+.link {
+    font-size: 16px;
+    color: #494949;
+    text-decoration: underline;
+    text-decoration-color: #494949; /* Custom underline color */
+    cursor: pointer; /* Changes the pointer to a hand */
+
+    
+}
+.container{
+
+    height: 100%;
+
+}
+.buttonContainer{
+    margin-top: 20px;
+}

@@ -1,0 +1,318 @@
+@import "../../variables.module.scss"; // Import global variables
+
+
+.navbar {
+  z-index: 1100; /* Adjusted from 1000 to 1100 */
+  transition: background-color 0.3s ease; /* Smooth transition when background changes */
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Moved from sx */
+  margin: 0 auto; /* Moved from sx */
+  left: 0; /* Moved from sx */
+  right: 0; /* Moved from sx */
+}
+
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .navbar {
+    height: 70px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .navbar {
+    height: 109px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar {
+    height: 109px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar {
+    height: 109px;
+  }
+}
+
+
+.MuiAppBar-root {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0; /* Only add this if there's a margin issue */
+}
+.css-18t4ubm-MuiContainer-root {
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  padding: 0;
+}
+.navbar.scrolled {
+  background-color: var(
+    --navbar-background-color
+  ); // Use the background color when scrolled
+}
+
+$desktop-breakpoint: 1280px;
+$tablet-breakpoint: 769px;
+$large-phone-breakpoint: 481px; // Adjusted from your description
+$small-phone-breakpoint: 0px; // Adjusted from your description
+
+.toolbar {
+  width: 100%; // Use the full width of its container
+  margin: 0 auto; // Center the toolbar within its container
+  display: flex; // Flexbox to align items
+  justify-content: space-between; // Distribute space evenly
+  align-items: center; // Align items vertically in the center
+  padding: 0;
+
+  @media (max-width: $desktop-breakpoint) {
+    // When screen size is below 1280px
+    max-width: 1100px; // Suitable for smaller desktops
+  }
+  @media (max-width: $tablet-breakpoint) {
+    // When screen size is below 769px
+    max-width: 900px; // Suitable for tablets and large phones
+    height: 70px;
+  }
+  @media (max-width: $large-phone-breakpoint) {
+    // When screen size is below 481px
+    max-width: 800px; // Suitable for smaller tablets and large phones
+  }
+}
+
+.css-1ooonlz-MuiPaper-root-MuiAppBar-root {
+  height: 100px;
+}
+
+.logo-container {
+  @media (max-width: $large-phone-breakpoint) {
+    // Max width for desktops
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    width: 100%;
+  }
+}
+.logo {
+  height: auto;
+  width: 146px;
+
+  @media (max-width: $tablet-breakpoint) { // For tablets
+    width: 100px;
+  }
+
+  @media (max-width: $large-phone-breakpoint) { // For large phones
+    width: 90px;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: $small-phone-breakpoint) { // For small phones
+    width: 80px;
+    margin-top: 30px; // Existing margin for small phones
+  }
+
+  // New margin added for mobile view (phones, less than 576px)
+  @media (max-width: 575.98px) {
+    margin-top: 20px; // Adjust the value as needed for your design
+  }
+}
+
+
+.menu-button {
+  display: flex;
+  color: $primary-color;
+
+  @media (min-width: 600px) {
+    display: none;
+  }
+}
+
+/* Add this to your CSS file */
+.nav-links {
+  display: flex;
+  gap: 20px; // Adjust spacing as needed
+}
+
+.link {
+  color: $primary-color;
+
+  position: relative;
+  color: $primary-color;
+  text-decoration: none;
+  font-size: 18px; // Default font size for large desktops
+  font-weight: 500;
+  transition: color 0.3s ease;
+
+  @media (max-width: $desktop-breakpoint) {
+    // Max width for desktops
+    font-size: 16px; // Slightly smaller font size for smaller desktops
+  }
+
+  @media (max-width: $tablet-breakpoint) {
+    // Max width for tablets
+    font-size: 13px; // Smaller font size for tablets
+  }
+
+  @media (max-width: $large-phone-breakpoint) {
+    // Max width for large phones
+    font-size: 12px; // Even smaller font size for large phones
+  }
+
+  @media (max-width: $small-phone-breakpoint) {
+    // Max width for small phones
+    font-size: 10px; // Smallest font size for small phones
+  }
+}
+
+.logout-link {
+  color: $logout-color;
+  text-decoration: none;
+}
+.language-link {
+  color: $primary-color;
+  text-decoration: none;
+}
+
+.link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: $primary-color; /* Underline color */
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: $primary-color; /* Change to your desired hover color */
+}
+
+.link:hover::after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  color: $primary-color !important;
+
+  .MuiTypography-root {
+    margin-left: 0.5rem;
+  }
+
+  .MuiMenuItem-root {
+    color: $primary-color;
+  }
+
+  &:hover {
+    color: darken($primary-color, 10%);
+  }
+}
+
+.user-avatar {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+
+  .MuiAvatar-root {
+    // border: 2px solid $primary-color; /* Add the blue border */
+    border-radius: 50%; /* Ensure the avatar remains circular */
+    margin-right: 10px;
+    
+  }
+  .user-name {
+    color: $description-color;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .dropdown-icon {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.drawer {
+  width: 100%;
+
+  .MuiTypography-root {
+    color: $primary-color;
+  }
+
+  .list-item {
+    color: $primary-color;
+
+    &:hover {
+      background-color: lighten($primary-color, 40%);
+    }
+
+    .icon {
+      margin-right: 0.5rem;
+    }
+  }
+
+  .drawer-list {
+    margin-top: 40px;
+  }
+
+  .drawer-nav-link {
+    background-color: #f7f7f7; // Light gray background
+    margin: 8px; // Space between items
+    border-radius: 10px; // Rounded corners
+
+    &:hover {
+      background-color: #e0e0e0; // Slightly darker gray on hover
+    }
+
+    .MuiTypography-root {
+      // Directly target the Typography component within the button
+      padding: 12px 16px; // Comfortable padding around the text
+    }
+  }
+}
+
+.navbar_toolbar__KwDK_ {
+  padding: 0;
+}
+
+.profileLink{
+  text-decoration: none;
+}
+.user-avatar-container {
+  display: flex;
+  align-items: center; // Align items vertically in the center
+  gap: 10px; // Optional: adds space between the avatar and the name
+}
+.menu-enter {
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 300ms ease-out, transform 300ms ease-out;
+}
+
+.menu-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+}

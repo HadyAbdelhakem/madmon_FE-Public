@@ -1,0 +1,40 @@
+.mainContainer {
+    width: 505px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+  .header {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: black;
+    margin-bottom: 20px;
+  }
+  .cardContainer {
+    width: 505px;
+    background-color: #fff;
+    border-radius: 8px; // Rounded corners
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.08); // Drop shadow
+  }
+  
+  .brokerName {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: black;
+  }
+  .brokerStatus {
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    color: #494949;
+    margin-left: 4px;
+  }
+  .noteDetails {
+    font-size: 12px !important;
+    font-weight: 300 !important;
+    color: #494949;
+  }
+  .noteText {
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    color: #0512f5;
+  }
+  

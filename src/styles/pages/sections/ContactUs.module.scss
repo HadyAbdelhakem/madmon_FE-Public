@@ -1,0 +1,156 @@
+.contactBox {
+    width: 505px;
+    height: 353px;
+    background-image: url("../../../assets/images/contactUs-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column; /* Arrange items in a column */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  
+  .contactBox::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(73, 73, 73, 0.8);
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .contactBox > * {
+    position: relative;
+    z-index: 2;
+    border-radius: 10px;
+  }
+  
+  .contactBoxItem {
+    width: 426px;
+    height: 45px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the text vertically */
+    margin-top: 15px;
+  }
+  
+  .column25 {
+    width: 15%; /* 25% width */
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    border-radius: 5px 0 0 5px; /* Rounded corners on the left */
+  }
+  
+  .column75 {
+    width: 85%; /* 75% width */
+    display: flex;
+    justify-content: start; /* Center text horizontally */
+    align-items: center; /* Center text vertically */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the right */
+  }
+  .contactBoxText{
+    color: white;
+    font-size: 18px;
+    font-weight: 500 !important;
+  }
+
+  .contactTextSection{
+    width: 453px;
+    height: 184px;
+    display: flex;
+    justify-content: center;
+    display: flex; /* Enable flexbox layout */
+  align-items: start; 
+
+    
+  }
+  .contactTextHeader{
+    font-size: 45px !important;
+    color: #100F11;
+    font-weight: 600 !important;
+    margin-bottom: 10px !important;
+    width: 602px;
+    height: 56px;
+
+  }
+
+  .contactTextDescription{
+    width: 453px;
+    height: 109px;
+    font-size: 20px !important;
+    margin-top: 15px;
+    color: #666;  }
+    .imageRow {
+        margin-top: 160px !important; /* Space above the image row */
+      }
+      
+      .image {
+        width: 43px; /* Make the image responsive */
+        height:43px; /* Maintain aspect ratio */
+
+      
+      }
+
+
+      //mobile styles 
+      .mobileContactBoxContainer{
+        display: flex;
+        justify-content: center;
+      }
+      .mobileContactTextHeader{
+        font-size: 18px !important;   
+        color: #494949;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .mobileContactBox {
+        width: 327px;
+        height: 168px;
+        margin-bottom: 30px;
+        background-image: url("../../../assets/images/contact-us-mobile.svg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: 10px;
+
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden; /* Ensure the overlay doesn't spill outside the border radius */
+    }
+    
+    .mobileContactBox::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(73, 73, 73, 0.7); /* Color with 40% opacity */
+        z-index: 1; /* Ensure the overlay appears above the background image */
+        border-radius: 10px; /* Ensure the overlay follows the border radius */
+    }
+    
+    .mobileContactBox * {
+        position: relative;
+        z-index: 2; /* Ensure that the content is above the overlay */
+    }
+    .mobileContactBoxText{
+      font-size: 14px;
+      color: white;
+      margin-left: 7px;
+    }
+    
+  .mobileIconContainer{
+    display: flex;
+    justify-content: end;
+  }

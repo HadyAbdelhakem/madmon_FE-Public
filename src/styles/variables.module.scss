@@ -1,0 +1,26 @@
+// Color Variables
+$primary-color: #0512f5;
+$background-color: #ffffff;
+$secondary-color: #f5f5f5;
+$description-color: #494949;
+$overlay-color: rgba(255, 255, 255, 0.5);
+$logout-color:#F20000;
+$alert-color:#F20000;
+
+
+
+
+//Responsive Break Points
+$desktop-breakpoint: 1280px;
+$tablet-breakpoint: 769px;
+$large-phone-breakpoint: 481px; 
+$small-phone-breakpoint: 0px; 
+
+// Exporting for use in JavaScript
+:export {
+  primaryColor: $primary-color;
+  backgroundColor: $background-color;
+  secondaryColor: $secondary-color;
+  descriptionColor: $description-color;
+  $logout-color:"red";
+}

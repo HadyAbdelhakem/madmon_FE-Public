@@ -1,0 +1,50 @@
+.container {
+    border: 2px solid #F2F3F4; /* No quotes needed */
+    max-width: 820px;
+    max-height: 253px;
+    width: 100%; /* Add this if you want the width to adjust responsively */
+    height: auto; /* Ensure height adjusts based on content */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-radius: 16px;
+}
+
+.rightCol{
+    display: flex;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.title{
+font-size: 20px !important;
+color: black;
+font-weight: 500 !important;
+}
+.subTitle{
+    max-height: 48px;
+    color: #494949;
+    font-size: 14px !important;
+}
+.subTitleContainer{
+    max-width: 354px;
+    margin-bottom: 20px;
+}
+.imageContainer{
+    display: flex;
+    justify-content: end;
+}
+.questionImage {
+ 
+    border-radius: 8px; /* Optional: Add rounded corners */
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        max-width: 50%; /* Allow full width on smaller screens */
+    }
+
+    @media (max-width: 480px) {
+        max-width: 50%; /* Full width on extra small screens */
+        border-radius: 6px; /* Adjust border radius for smaller screens */
+        display: 'flex';
+        justify-content: center;
+    }
+}

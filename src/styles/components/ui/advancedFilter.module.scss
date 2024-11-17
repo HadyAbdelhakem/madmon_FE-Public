@@ -1,0 +1,12 @@
+.mainContainer {
+    border: 2px solid #F2F3F4; /* No quotes needed */
+    max-width: 400px;
+    max-height: 2788px;
+    width: 100%; /* Add this if you want the width to adjust responsively */
+    height: auto; /* Ensure height adjusts based on content */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    border-radius: 16px;
+    margin-top: 8px;
+    padding: 50px;
+
+  }

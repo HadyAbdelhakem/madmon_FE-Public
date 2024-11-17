@@ -1,0 +1,14 @@
+.timerContainer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4B49AC;
+    border-radius: 5px;
+    padding: 1rem; /* Converted from the theme spacing scale if using MUI's default spacing */
+    color: white;
+    align-items: center;
+}
+.numberText{
+    color: white;
+    font-size: 60px !important;
+    font-weight: 600;
+}

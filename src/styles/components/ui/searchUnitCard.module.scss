@@ -1,0 +1,69 @@
+.MuiCardContent{
+  box-shadow: none; /* Removes the default shadow */
+}
+.mainUnitCard {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px; // 2 in MUI is equivalent to 16px
+    height: 253px;
+    width: 820px;
+    border-radius: 5px;
+    position: relative;
+    background-color: #F2F3F4;
+    cursor: pointer; // Change the cursor to indicate it's clickable
+    border-radius: 16px !important;
+    box-shadow: none; /* Removes the default shadow */
+
+  }
+  .unitMediaCard {
+    position: relative; // This is important for the Image component to fill
+    width: 295px; // Full width of the card media
+    height: 253px; // Full height of the card media
+    overflow: hidden; // Hide any overflow from the image
+  }
+  
+  .unitImage {
+    object-fit: contain; // Ensures the image fits the container while maintaining its aspect ratio
+    object-position: center; // Centers the image within the container
+  }
+  .title{
+    font-size: 22px !important;
+    color: #000 !important;
+    font-weight: 500 !important;
+  }
+  .unitPrice {
+    color: #F20000;
+    font-size: 28px !important;
+    font-weight: 600 !important;
+    width: 180px;
+  }
+  
+  .inlineContainer {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    text-align: start;
+    justify-content: start;
+}
+.locationText{
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    color: #494949;
+}
+.iconImage{
+    margin-right: 10px;
+}
+.buttonsContainer{
+    margin-top: 25px;
+    
+}
+.reservedBox {
+  position: absolute;
+  width: 119px;
+  height: 25px;
+  background-color: rgba(5, 18, 245, 0.8); /* #0512F5 with 80% opacity */
+  color: #FFF;
+  padding: 5px;
+  border-radius: 10px 0 10px 0;
+  z-index: 1;
+  font-size: 10px;
+}

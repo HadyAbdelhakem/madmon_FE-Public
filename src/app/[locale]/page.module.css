@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* This will align children to the edges */
+  max-width: 1300;
+}
+.navbar_toolbar__KwDK_ {
+  padding: 0;
+}
+.react-tel-input .selected-flag:hover, 
+.react-tel-input .selected-flag:focus {
+  background-color: transparent;
+}
+
+.react-tel-input input:hover,
+.react-tel-input button:hover {
+  border-radius: 10px; 
+}
+
+

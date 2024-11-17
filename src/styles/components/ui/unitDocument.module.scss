@@ -1,0 +1,74 @@
+.title {
+    font-size: 16px !important;
+    color: black;
+    font-weight: 600 !important;
+  }
+  
+  .documentCard {
+    width: 100%; /* Full width on smaller screens */
+    max-width: 505px; /* Maximum width for larger screens */
+    height: auto; /* Adjust height to content on smaller screens */
+    background-color: #fff;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.08); /* Drop shadow */
+    margin-top: 10px;
+    padding: 20px;
+  }
+  
+  .availableText {
+    color: #02ae36;
+    font-size: 16px !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .unavailableText {
+    color: #f20000;
+    font-size: 16px !important;
+    margin-bottom: 15px !important;
+  }
+  
+  .iconTitle {
+    font-size: 14px !important;
+    color: #000;
+    text-align: start;
+  }
+  
+  .iconImage {
+    margin-right: 8px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .documentCard {
+      max-width: 90%; /* Smaller width on tablet */
+      padding: 16px; /* Adjusted padding for tablet */
+    }
+  
+    .title,
+    .availableText,
+    .unavailableText {
+      font-size: 14px !important; /* Slightly smaller font for tablet */
+    }
+  
+    .iconTitle {
+      font-size: 12px !important; /* Adjusted font size for tablet */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .documentCard {
+      max-width: 100%; /* Full width on mobile */
+      padding: 12px; /* Reduced padding for mobile */
+    }
+  
+    .title,
+    .availableText,
+    .unavailableText {
+      font-size: 12px !important; /* Smaller font for mobile */
+    }
+  
+    .iconTitle {
+      font-size: 10px !important; /* Smaller font for mobile */
+    }
+  }
+  

@@ -1,0 +1,52 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@fontsource-variable/noto-kufi-arabic": "^5.1.0",
+    "@mui/icons-material": "^6.1.2",
+    "@mui/material": "^6.1.6",
+    "@tanstack/react-query": "^5.59.13",
+    "@tanstack/react-query-devtools": "^5.59.13",
+    "@types/cookie": "^0.6.0",
+    "axios": "^1.7.7",
+    "cookies-next": "^4.3.0",
+    "country-flag-icons": "^1.5.13",
+    "framer-motion": "^11.11.2",
+    "js-cookie": "^3.0.5",
+    "libphonenumber-js": "^1.11.12",
+    "mui-tel-input": "^6.0.1",
+    "next": "14.2.14",
+    "next-intl": "^3.20.0",
+    "react": "^18",
+    "react-countdown": "^2.3.6",
+    "react-dom": "^18",
+    "react-multi-carousel": "^2.8.5",
+    "react-phone-input-2": "^2.15.1",
+    "react-phone-number-input": "^3.4.9",
+    "react-qr-code": "^2.0.15",
+    "react-slick": "^0.30.2",
+    "sass": "^1.79.4",
+    "slick-carousel": "^1.8.1",
+    "stylis": "^4.3.4",
+    "stylis-plugin-rtl": "^2.1.1"
+  },
+  "devDependencies": {
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@types/stylis": "^4.2.6",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.14",
+    "typescript": "^5"
+  }
+}

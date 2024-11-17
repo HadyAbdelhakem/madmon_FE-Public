@@ -1,0 +1,69 @@
+.reservationFees {
+    background-color: #f2f3f4; /* Light background color */
+    border: 0.5px solid #6666ff; /* Light blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the box */
+    text-align: center; /* Center align the text */
+    width: 295px; /* Set a fixed width or make it responsive */
+    height: 153px;
+
+  }
+  
+  .title {
+    font-weight: 500 !important;
+    color: #494949;
+    font-size: 18px !important;
+  }
+  
+  .subtitle {
+
+    color: #494949;
+    font-size: 14px !important;
+  }
+
+  .priceBox {
+    background-color: #f2f3f4; /* Light background color */
+    border: 1px solid rgba(102, 102, 255, 0.5); /* Light blue border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Spacing inside the box */
+    text-align: center; /* Center align the text */
+    width: 190px; /* Set a fixed width */
+    height: 153px; /* Set a fixed height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .price {
+    font-weight: bold !important;
+    font-size: 20px !important; /* Larger font size for the amount */
+    color: #6666ff; /* Light blue color for the amount */
+  }
+  
+  .currency {
+    font-size: 12px !important; /* Smaller font size for the currency */
+    margin-left: 4px; /* Add some space between the amount and the currency */
+    color: #6666ff;
+  }
+  .linkContainer {
+    display: inline-flex;
+    align-items: center;
+    color: #0000FF; /* Blue text color */
+    text-decoration: none;
+  }
+  
+  .linkText {
+    font-size: 14px !important;
+    color: #0000FF; /* Same blue color */
+    text-decoration: underline; /* Underline the text */
+    margin-right: 5px; /* Add some space between the text and the arrow */
+    cursor: pointer; /* Make it look like a link */
+  }
+  
+  .arrowIcon {
+    font-size: 16px !important;
+    color: #0000FF; /* Same blue color for the arrow */
+
+  }
+  
+  

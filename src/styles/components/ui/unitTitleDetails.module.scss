@@ -1,0 +1,110 @@
+.mainContainer {
+  height: 57px;
+  width: 100%; /* Full width */
+  max-width: 505px; /* Maximum width */
+}
+
+.cardContainer {
+  height: 57px;
+  width: 100%; /* Full width to adapt to parent */
+  max-width: 505px; /* Maximum width for larger screens */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.08);
+}
+
+.contentRow {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  color: #000;
+}
+
+.priceText {
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  color: #0512F5;
+}
+
+.priceCurrency {
+  font-size: 14px !important;
+  color: #0512F5;
+  font-weight: 400 !important;
+}
+
+.statusText {
+  color: #02AE36;
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  text-align: start;
+}
+.locationContainer{
+  margin-top: 5px !important;
+}
+
+
+.locationText {
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  color: #494949;
+}
+
+.addedText,
+.addedDateText {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: #494949;
+  margin-right: 8px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .mainContainer,
+  .cardContainer {
+    max-width: 100%; /* Full width on tablet and smaller screens */
+    padding: 0 16px; /* Optional padding for better alignment */
+  }
+
+  .title {
+    font-size: 18px !important; /* Slightly smaller font for tablet */
+  }
+
+  .priceText {
+    font-size: 20px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .mainContainer,
+  .cardContainer {
+    height: auto; /* Allow card to grow if content wraps */
+    max-width: 100%; /* Full width on mobile */
+    padding: 0 12px; /* Optional padding for better alignment */
+  }
+
+  .title {
+    font-size: 16px !important; /* Smaller font for mobile */
+  }
+
+  .priceText {
+    font-size: 18px !important;
+  }
+
+  .priceCurrency {
+    font-size: 12px !important;
+  }
+
+  .locationText,
+  .addedText,
+  .addedDateText {
+    font-size: 12px !important;
+  }
+}

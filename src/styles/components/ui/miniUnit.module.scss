@@ -1,0 +1,86 @@
+.cardContainer {
+    width: 189px;
+    height: 276px;
+    position: relative;
+}
+
+.unitImage {
+    width: 189px;
+    height: 189px;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 19%; /* Adjusted as needed from your initial 50% to start higher up */
+    left: 0;
+    width: 100%;
+    height: 50%; /* This covers the designated bottom half as per your description */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), black); /* Gradient starts fully transparent and ends in black */
+    opacity:0.6; /* Full opacity ensures the gradient is fully visible */
+    z-index: 1; /* Ensures the layering is correct */
+    border-radius: 10px; /* Rounded corners for the overlay */
+}
+
+
+.typography {
+    position: absolute;
+    bottom: 95px;
+    left: 0;
+    width: 100%;
+    text-align: start;
+    font-size: 14px;
+    padding: 5px;
+    color: #ffff;
+    font-weight: 600;
+    z-index: 2; /* Ensure it's above the overlay */
+    margin-left: 10px;
+}
+.currency {
+    font-size: 12px;
+    font-weight:300;
+    color: #FFF;
+    margin-left: 4px;
+}
+
+.favoriteIcon {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    z-index: 3;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    box-sizing: border-box;
+    width: 29px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.unitTitle {
+    color: #494949;
+    font-weight: 600;
+    font-size: 16px !important;
+}
+
+.unitSubTitle {
+    color: #494949;
+    font-size: 14px !important;
+}
+
+.iconText {
+    color: #494949;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    margin-right: 5px !important;
+}
+
+.inlineContainer {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    text-align: start;
+    justify-content: start;
+}

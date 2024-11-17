@@ -1,0 +1,127 @@
+@import "../../variables.module.scss";
+
+// Variables
+$primary-color: #0512f5;
+$description-color: #494949;
+$overlay-color: rgba(255, 255, 255, 0.5);
+$mobile-breakpoint: 480px;
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+
+.iconWrapper {
+  position: fixed;
+  bottom: 20px;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: $primary-color;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.heroSection {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+  padding: 0 16px; // Add padding to accommodate content on smaller screens
+
+  // Background image with proper z-index layering
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../../../assets/images/hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; // Keep the background behind other elements
+  }
+
+  // Mirror the background image for RTL languages
+  :root[dir="rtl"] &::before {
+    transform: scaleX(-1); // Flip the background image horizontally
+  }
+
+  .textContainer {
+    position: relative; // Ensure the content is above the background
+    z-index: 1; // Bring the content above the background
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 16px; // Add padding for spacing on smaller screens
+
+    // Center text for tablets and mobile
+    @media (max-width: $desktop-breakpoint) {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    // Left-align text for desktop
+    @media (min-width: $desktop-breakpoint) {
+      width: 480px;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .heroTypography {
+      font-weight: bold;
+      color: $primary-color;
+      margin-bottom: 2rem;
+      font-size: 36px;
+      max-width: 245px;
+      max-height: 98px;
+
+      // Adjust text for RTL
+      :root[dir="rtl"] & {
+        text-align: right;
+      }
+
+      @media (min-width: $tablet-breakpoint) {
+        font-size: 45px;
+        max-width: none;
+        max-height: none;
+      }
+
+      @media (min-width: $desktop-breakpoint) {
+        font-size: 60px;
+      }
+    }
+
+    .heroDescription {
+      color: $description-color;
+      font-weight: 500;
+      font-size: 16px;
+      max-width: 281px;
+      max-height: 162px;
+
+      @media (min-width: $tablet-breakpoint) {
+        font-size: 18px;
+        max-width: none;
+        max-height: none;
+      }
+
+      @media (min-width: $desktop-breakpoint) {
+        text-align: left;
+      }
+
+      // Adjust text for RTL
+      :root[dir="rtl"] & {
+        text-align: right;
+      }
+    }
+  }
+}

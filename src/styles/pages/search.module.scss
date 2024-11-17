@@ -1,0 +1,9 @@
+.container {
+    margin: 0; /* Default padding for larger screens */
+  
+    /* Apply padding on smaller screens */
+    @media (max-width: 600px) {
+      margin: 16px; /* Adjust this value as needed for the mobile view */
+    }
+  }
+  

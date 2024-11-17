@@ -1,0 +1,76 @@
+.counterCard {
+  width: 100%;
+  height: 379px;
+  background-color: rgba(5, 18, 245, 0.8);
+  margin-top: 70px;
+  margin-bottom: 70px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.title {
+  font-size: 24px; /* Default font size */
+  font-weight: 500;
+  color: #f2db00;
+
+  @media (max-width: 768px) { /* For tablets */
+    font-size: 20px; /* Decrease font size */
+  }
+
+  @media (max-width: 576px) { /* For mobile phones */
+    font-size: 18px; /* Further decrease font size */
+  }
+}
+
+.description {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 24px; /* Default font size */
+  color: #ffffff;
+  max-width: 451px;
+
+  @media (max-width: 768px) { /* For tablets */
+    font-size: 20px; /* Decrease font size */
+  }
+
+  @media (max-width: 576px) { /* For mobile phones */
+    font-size: 16px; /* Further decrease font size */
+  }
+}
+
+.countdownContainer {
+  display: flex;
+  justify-content: end;
+
+  @media (max-width: 576px) { /* For mobile phones */
+    justify-content: center; /* Center the countdown on small screens */
+  }
+}
+
+/* Mobile View */
+.mobileTimerCard {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  height: 40vh; /* Full viewport height - adjust as needed */
+  margin-top: 50px;
+}
+
+.mobileTitle {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0512f5;
+  text-align: center;
+}
+
+.mobileDescription {
+  font-size: 14px;
+  color: #494949;
+  text-align: center;
+}
+
+.mobileCountDownContainer {
+  display: flex;
+  justify-content: center;
+}
